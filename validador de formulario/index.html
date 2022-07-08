@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+        <h1>Crie sua conta</h1>
+        <form action="cadastro.php" class="validation" method="POST">
+            <label>
+                Seu Nome <br>
+                <input type="text" name="name" data-rules="required/min=2">
+            </label>
+            <br>
+            <label>
+                Email <br>
+                <input type="email" name="email" data-rules="required/email">
+            </label>
+            <br>
+            <label>
+                Senha
+                 <br>
+                <input type="password" name="senha" data-rules="required/min=7">
+            </label>
+            <label>
+                <input  class="button" type="submit" value="cadastrar">
+            </label>
+        </form>
+        <div>já possui uma conta?<a href="">Faça login</a>
+        
+        </div>
+
+       </div>
+        <div class="image">
+
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
